@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shehroz Khadim | Medical Student</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-poppins bg-dark-800 min-h-screen text-gray-300">
+    <div class="container mx-auto px-4 py-8 max-w-3xl">
+        <!-- Header with Profile Image -->
+        <header class="flex flex-col items-center mb-8 animate-fade-in">
+            <img src="png2.jpg" 
+                 alt="Shehroz Khadim" 
+                 class="profile-img w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-dark-800 shadow-lg mb-4">
+            <h1 class="text-2xl md:text-3xl font-bold text-center bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                Shehroz Khadim
+            </h1>
+            <p class="text-base md:text-lg text-gray-400 mt-2">Medical Student | BS Anesthesia</p>
+            
+            <!-- CV Download Button -->
+            <button onclick="downloadCV()"
+               class="cv-button mt-4 inline-flex items-center px-4 py-2 md:px-6 md:py-3 bg-gradient-to-r from-primary to-secondary text-white rounded-lg shadow-md hover:opacity-90 transition-all">
+                <i class="fas fa-download mr-2"></i>
+                Download CV
+            </button>
+        </header>
+
+        <!-- Tab Navigation -->
+        <nav class="flex justify-center mb-8">
+            <div class="inline-flex rounded-lg shadow-sm" role="group">
+                <button type="button" data-tab="about" class="nav-tab active px-4 py-2 md:px-6 md:py-3 text-xs md:text-sm font-medium rounded-l-lg border border-gray-700 hover:bg-gray-800 hover:text-primary transition-all duration-300">
+                    About
+                </button>
+                <button type="button" data-tab="skills" class="nav-tab px-4 py-2 md:px-6 md:py-3 text-xs md:text-sm font-medium border-t border-b border-gray-700 hover:bg-gray-800 hover:text-secondary transition-all duration-300">
+                    Skills
+                </button>
+                <button type="button" data-tab="contact" class="nav-tab px-4 py-2 md:px-6 md:py-3 text-xs md:text-sm font-medium rounded-r-lg border border-gray-700 hover:bg-gray-800 hover:text-primary transition-all duration-300">
+                    Contact
+                </button>
+            </div>
+        </nav>
+
+        <!-- Tab Content Container -->
+        <div class="bg-gray-900 rounded-xl shadow-xl p-4 md:p-6 min-h-[300px] animate-fade-in border border-gray-700">
+            <!-- About Section -->
+            <div id="about" class="tab-content active animate-slide-up">
+                <h2 class="typewriter text-xl md:text-2xl font-bold mb-4 md:mb-6 text-primary w-0 overflow-hidden whitespace-nowrap animate-typewriter">
+                    About Me
+                </h2>
+                <div class="grid md:grid-cols-2 gap-6 md:gap-8">
+                    <div>
+                        <p class="text-gray-300 mb-4 md:mb-6 leading-relaxed">
+                            I am Shehroz Khadim, an 18-year-old medical student from Karachi, Pakistan, currently pursuing my BS in Anesthesia. I have completed my Intermediate (Pre-Medical) education and am passionate about advancing in the medical field.
+                        </p>
+                        <p class="text-gray-300 mb-4 md:mb-6 leading-relaxed">
+                            As a dedicated Muslim, I strive to combine my faith with my professional aspirations to serve humanity through healthcare. My goal is to become a skilled anesthetist who can contribute to patient care and medical advancements.
+                        </p>
+                        <div class="bg-gray-800 p-3 md:p-4 rounded-lg border border-gray-700">
+                            <h3 class="font-semibold text-primary mb-2">Personal Details</h3>
+                            <ul class="space-y-2">
+                                <li class="flex items-center">
+                                    <i class="fas fa-calendar-alt text-primary mr-2 w-5"></i>
+                                    <span class="text-gray-300">Age: 18 years</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-mosque text-primary mr-2 w-5"></i>
+                                    <span class="text-gray-300">Religion: Islam</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-globe-asia text-primary mr-2 w-5"></i>
+                                    <span class="text-gray-300">Country: Pakistan</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-city text-primary mr-2 w-5"></i>
+                                    <span class="text-gray-300">City: Karachi</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-graduation-cap text-primary mr-2 w-5"></i>
+                                    <span class="text-gray-300">Education: Intermediate (Pre-Medical)</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-book-medical text-primary mr-2 w-5"></i>
+                                    <span class="text-gray-300">Field: BS Anesthesia</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-gradient-to-br from-primary to-secondary p-0.5 rounded-lg h-full">
+                            <div class="bg-gray-800 p-4 md:p-6 rounded-lg h-full">
+                                <h3 class="font-bold text-lg md:text-xl mb-3 md:mb-4 text-white">Education & Career</h3>
+                                <div class="space-y-4 md:space-y-6">
+                                    <div class="flex">
+                                        <div class="flex flex-col items-center mr-3 md:mr-4">
+                                            <div class="w-7 h-7 md:w-8 md:h-8 rounded-full bg-primary flex items-center justify-center text-white">
+                                                <i class="fas fa-graduation-cap text-xs md:text-sm"></i>
+                                            </div>
+                                            <div class="w-px h-full bg-gray-600 mt-2"></div>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-white">Intermediate (Pre-Medical)</h4>
+                                            <p class="text-xs md:text-sm text-gray-400">Completed</p>
+                                            <p class="text-gray-300 mt-1 text-sm">Successfully passed with strong foundation in biological sciences.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex">
+                                        <div class="flex flex-col items-center mr-3 md:mr-4">
+                                            <div class="w-7 h-7 md:w-8 md:h-8 rounded-full bg-secondary flex items-center justify-center text-white">
+                                                <i class="fas fa-user-graduate text-xs md:text-sm"></i>
+                                            </div>
+                                            <div class="w-px h-full bg-gray-600 mt-2"></div>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-white">BS Anesthesia</h4>
+                                            <p class="text-xs md:text-sm text-gray-400">In Progress</p>
+                                            <p class="text-gray-300 mt-1 text-sm">Currently pursuing degree to become a professional anesthetist.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex">
+                                        <div class="flex flex-col items-center mr-3 md:mr-4">
+                                            <div class="w-7 h-7 md:w-8 md:h-8 rounded-full bg-indigo-500 flex items-center justify-center text-white">
+                                                <i class="fas fa-briefcase-medical text-xs md:text-sm"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-white">Medical Career</h4>
+                                            <p class="text-xs md:text-sm text-gray-400">Future Aspiration</p>
+                                            <p class="text-gray-300 mt-1 text-sm">Aiming to specialize in anesthesia and contribute to healthcare sector.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div id="skills" class="tab-content animate-slide-up">
+                <h2 class="text-xl md:text-2xl font-bold mb-6 text-secondary">
+                    <span class="inline-block border-b-2 border-secondary pb-1">Professional Skills</span>
+                </h2>
+                <div class="grid md:grid-cols-2 gap-6 md:gap-8">
+                    <div>
+                        <div class="mb-4 md:mb-6">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium text-gray-300">Medical Knowledge</span>
+                                <span class="text-xs md:text-sm text-gray-400">Intermediate</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5">
+                                <div class="skill-bar bg-primary h-2.5 rounded-full" style="width: 0%" data-width="65"></div>
+                            </div>
+                        </div>
+                        <div class="mb-4 md:mb-6">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium text-gray-300">Understanding of Anesthesia</span>
+                                <span class="text-xs md:text-sm text-gray-400">Basic</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5">
+                                <div class="skill-bar bg-primary h-2.5 rounded-full" style="width: 0%" data-width="40"></div>
+                            </div>
+                        </div>
+                        <div class="mb-4 md:mb-6">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium text-gray-300">Patient Care & Monitoring</span>
+                                <span class="text-xs md:text-sm text-gray-400">Intro Level</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5">
+                                <div class="skill-bar bg-primary h-2.5 rounded-full" style="width: 0%" data-width="50"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="mb-4 md:mb-6">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium text-gray-300">Communication & Teamwork</span>
+                                <span class="text-xs md:text-sm text-gray-400">Intermediate</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5">
+                                <div class="skill-bar bg-secondary h-2.5 rounded-full" style="width: 0%" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="mb-4 md:mb-6">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium text-gray-300">Basic Computer Literacy</span>
+                                <span class="text-xs md:text-sm text-gray-400">Intermediate</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5">
+                                <div class="skill-bar bg-secondary h-2.5 rounded-full" style="width: 0%" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3 md:gap-4 mt-6 md:mt-8">
+                            <div class="bg-gray-800 p-3 md:p-4 rounded-lg border border-gray-700 text-center hover:border-primary transition-colors">
+                                <i class="fas fa-book-medical text-xl md:text-2xl text-primary mb-2"></i>
+                                <h4 class="font-medium text-gray-300 text-sm md:text-base">Medical Studies</h4>
+                            </div>
+                            <div class="bg-gray-800 p-3 md:p-4 rounded-lg border border-gray-700 text-center hover:border-primary transition-colors">
+                                <i class="fas fa-users text-xl md:text-2xl text-primary mb-2"></i>
+                                <h4 class="font-medium text-gray-300 text-sm md:text-base">Teamwork</h4>
+                            </div>
+                            <div class="bg-gray-800 p-3 md:p-4 rounded-lg border border-gray-700 text-center hover:border-secondary transition-colors">
+                                <i class="fas fa-comments text-xl md:text-2xl text-secondary mb-2"></i>
+                                <h4 class="font-medium text-gray-300 text-sm md:text-base">Communication</h4>
+                            </div>
+                            <div class="bg-gray-800 p-3 md:p-4 rounded-lg border border-gray-700 text-center hover:border-secondary transition-colors">
+                                <i class="fas fa-heartbeat text-xl md:text-2xl text-secondary mb-2"></i>
+                                <h4 class="font-medium text-gray-300 text-sm md:text-base">Patient Care</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div id="contact" class="tab-content animate-slide-up">
+                <h2 class="text-xl md:text-2xl font-bold mb-6 text-primary">
+                    <span class="inline-block border-b-2 border-primary pb-1">Contact Information</span>
+                </h2>
+                <div class="bg-gray-800 p-4 md:p-6 rounded-lg border border-gray-700">
+                    <div class="space-y-4">
+                        <div class="contact-item flex items-start">
+                            <div class="bg-primary p-2 rounded-full text-white mr-3 md:mr-4 flex-shrink-0">
+                                <i class="fas fa-envelope text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-300">Email</h4>
+                                <a href="mailto:tathakhadim543@gmail.com" class="text-gray-400 hover:text-primary transition-colors break-all block mt-1">tathakhadim543@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item flex items-start">
+                            <div class="bg-primary p-2 rounded-full text-white mr-3 md:mr-4 flex-shrink-0">
+                                <i class="fas fa-phone-alt text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-300">Phone</h4>
+                                <a href="tel:+928102342224" class="text-gray-400 hover:text-primary transition-colors block mt-1">+92 810 2342224</a>
+                            </div>
+                        </div>
+                        <div class="contact-item flex items-start">
+                            <div class="bg-primary p-2 rounded-full text-white mr-3 md:mr-4 flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-300">Location</h4>
+                                <p class="text-gray-400 block mt-1">Karachi, Pakistan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-8 md:mt-12 text-center text-gray-400 text-sm">
+            <p>© 2025 Shehroz Khadim. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
